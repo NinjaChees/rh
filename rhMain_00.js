@@ -33,5 +33,6 @@ window.onload = function() {
     var myIO = new rhIO();
     var myCalc = new rhCalc();
     myCalc.init( myRH );
+    console.log( "Created!!!" );
 };
 
