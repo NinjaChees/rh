@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>rHelper sandbox</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <style>
+        @import url(css.css);
+    </style>
+    <script src="rhFunc.js"></script>
+    <script src="rhParam_00.js"></script>
+    <script src="rhCalc_00.js"></script>
+    <script src="rhIO_00.js"></script>
+    <script src="rhMain_00.js"></script>
+    <script src="rhSliders.js"></script>
+</head>
+<body>
+
+<div id="uglyform">
+<div class="lineTitle">Time: </div>
+<input type="text" id="timeInput" onchange="runRH(id)">
+<div id="time">###</div>
+<div class="units">(h:m:s)</div>
+
+<div class="lineTitle">Distance: </div>
+<input type="text" id="distanceKMInput" onchange="runRH(id)">
+<div id="distanceKM">###</div>
+<div class="units">(km)</div>
+<input type="text" id="distanceMilesInput" onchange="runRH(id)">
+<div id="distanceMiles">###</div>
+<div class="units">(mi)</div>
+
+<div class="lineTitle">Pace: </div>
+<input type="text" id="paceKMInput" onchange="runRH(id)">
+<div id="paceKM">###</div>
+<div class="units">(min/km)</div>
+<input type="text" id="paceMilesInput" onchange="runRH(id)">
+<div id="paceMiles">###</div>
+<div class="units">(min/mi)</div>
+
+<div class="lineTitle">Speed: </div>
+<input type="text" id="speedKMInput" onchange="runRH(id)">
+<div id="speedKM">###</div>
+<div class="units">(km/h)</div>
+<input type="text" id="speedMilesInput" onchange="runRH(id)">
+<div id="speedMiles">###</div>
+<div class="units">(mi/h)</div>
+
+<div class="lineTitle">VOmax: </div>
+<input type="text" id="VOmaxInput" onchange="runRH(id)">
+<div id="VOmax">###</div>
+<div class="units">(mL/kg/min)</div>
+</div>
+
+
+<div id="slidersRH">
+    <!--Слайдер работает в секундах. Ввод и вывод преобразуется в тип Date-->
+    <p>
+        <label for="sliderTimeLabel">Time:</label>
+        <input type="text" id="sliderTimeLabel" readonly style="border:0;">
+    </p>
+    <div id="sliderTime"></div>
+    <!--Слайдер работает в 0.1метр/0,1 миля-->
+    <p>
+        <label for="sliderDistanceLabel">Distance:</label>
+        <input type="text" id="sliderDistanceLabel" readonly style="border:0;">
+    </p>
+    <div id="sliderDistance"></div>
+    <!--Слайдер работает в 0:01 min/m(mi)-->
+    <p>
+        <label for="sliderPaceLabel">Pace:</label>
+        <input type="text" id="sliderPaceLabel" readonly style="border:0;">
+    </p>
+    <div id="sliderPace"></div>
+    <!--Слайдер работает в 0.1р/0,1mi per hour-->
+    <p>
+        <label for="sliderSpeedLabel">Speed:</label>
+        <input type="text" id="sliderSpeedLabel" readonly style="border:0;">
+    </p>
+    <div id="sliderSpeed"></div>
+</div>
+
+</body>
+</html>

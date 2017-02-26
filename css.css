@@ -1,0 +1,27 @@
+#uglyform div {
+    float: left;
+    width: 60px;
+    text-align: right;
+}
+#uglyform {
+    min-width: 500px;
+
+}
+.units {
+    width: 70px;
+    text-align: left;
+}
+.lineTitle {
+     clear: left;
+     width: 120px;
+     text-align: left;
+ }
+
+#uglyform input {
+    float: left;
+    width: 50px;
+}
+#slidersRH{
+    width: 460px;
+    clear: left;
+}
