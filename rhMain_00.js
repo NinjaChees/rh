@@ -2,6 +2,9 @@
  * Created by Yuri on 26.05.2015.
  */
 
+    var myRH;
+    var myIO;
+    var myCalc;
 
 //document.getElementById("distanceKM").innerHTML = "10";
 //document.getElementById("distanceKMInput").value = "10";
@@ -29,9 +32,9 @@ function printRH(callerId) {
 };
 
 window.onload = function() {
-    var myRH = new rhParam();
-    var myIO = new rhIO();
-    var myCalc = new rhCalc();
+    myRH = new rhParam();
+    myIO = new rhIO();
+    myCalc = new rhCalc();
     myCalc.init( myRH );
     console.log( "Created!!!" );
 };
