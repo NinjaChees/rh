@@ -2,11 +2,6 @@
  * Created by Yuri on 26.05.2015.
  */
 
-var myRH = new rhParam();
-var myIO = new rhIO();
-var myCalc = new rhCalc();
-
-myCalc.init( myRH );
 
 //document.getElementById("distanceKM").innerHTML = "10";
 //document.getElementById("distanceKMInput").value = "10";
@@ -31,5 +26,12 @@ function printRH(callerId) {
             document.getElementById(key + "Input").value = document.getElementById(key).innerHTML;
         }
     }
+};
+
+window.onload = function() {
+    var myRH = new rhParam();
+    var myIO = new rhIO();
+    var myCalc = new rhCalc();
+    myCalc.init( myRH );
 };
 
