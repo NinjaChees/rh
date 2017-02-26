@@ -5,6 +5,7 @@
     var myRH;
     var myIO;
     var myCalc;
+    console.log( myRH )
 
 //document.getElementById("distanceKM").innerHTML = "10";
 //document.getElementById("distanceKMInput").value = "10";
@@ -37,5 +38,8 @@ window.onload = function() {
     myCalc = new rhCalc();
     myCalc.init( myRH );
     console.log( "Created!!!" );
+    console.log( myRH );
+    console.log( myIO );
+    console.log( myCalc );
 };
 
